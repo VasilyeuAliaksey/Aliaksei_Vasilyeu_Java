@@ -11,14 +11,9 @@ public class Solution {
         firstTask(scanner);
         secondTask(scanner);
         thirdTask(scanner);
+        fourthTask();
 
         scanner.close();
-
-        /* Ответ на 4 задание:
-             [((())()(()))]
-             Убрать 1 "]" закрывающую и поставить ")" закрывающую в конце
-             Есть правило сколько скобок открыл, столько и закрой. Но это лиш одно из правил.
-         */
     }
 
     static void firstTask(Scanner scanner) {
@@ -73,5 +68,12 @@ public class Solution {
         } else {
             System.out.println("Введите целое число");
         }
+    }
+
+    static void fourthTask(){
+        System.out.println("Ответ на 4 задание:\n" +
+                "[((())()(()))]\n" +
+                "Убрать 1 \"]\" закрывающую и поставить \")\" закрывающую в конце\n" +
+                "Есть правило сколько скобок открыл, столько и закрой. Но это лиш одно из правил.");
     }
 }
