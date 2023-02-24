@@ -4,10 +4,24 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Solution {
+    static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        firstTask(scanner);
+        secondTask(scanner);
+        thirdTask(scanner);
+
+        scanner.close();
+
+        /* Ответ на 4 задание:
+             [((())()(()))]
+             Убрать 1 "]" закрывающую и поставить ")" закрывающую в конце
+             Есть правило сколько скобок открыл, столько и закрой. Но это лиш одно из правил.
+         */
+    }
+
+    static void firstTask(Scanner scanner) {
         System.out.print("Задание №1: \n Введите число: ");
 
         if (scanner.hasNextDouble()) {
@@ -22,7 +36,9 @@ public class Solution {
         } else {
             System.out.println("Вы ввели не число");
         }
+    }
 
+    static void secondTask(Scanner scanner) {
         System.out.println("Задание №2: \n Введите имя: ");
         scanner.nextLine();
         String name = scanner.nextLine();
@@ -32,7 +48,9 @@ public class Solution {
         } else {
             System.out.println("Ответ №2: \n Нет такого имени");
         }
+    }
 
+    static void thirdTask(Scanner scanner) {
         System.out.print("Задание №3: \n Введите размер массива: ");
 
         if (scanner.hasNextInt()) {
@@ -55,11 +73,5 @@ public class Solution {
         } else {
             System.out.println("Введите целое число");
         }
-        scanner.close();
-        /* Ответ на 4 задание:
-             [((())()(()))]
-             Убрать 1 "]" закрывающую и поставить ")" закрывающую в конце
-         */
     }
-
 }
